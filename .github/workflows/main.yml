@@ -4,14 +4,12 @@
 name: Main CI
 
 on:
-  push:
-    branches: [main, develop]
   pull_request:
     branches: [main, develop]
 
 jobs:
   lint-and-test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -30,4 +28,3 @@ jobs:
         run: npm run lint
       - name: test
         run: npm run test
- 
