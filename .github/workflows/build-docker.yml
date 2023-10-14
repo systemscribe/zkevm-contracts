@@ -51,7 +51,7 @@ jobs:
         with:
           platforms: linux/amd64
           push: true
-          tags: ${{ DOCKERHUB_USERNAME }}/geth-zkevm-contracts:1.5-integration
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/geth-zkevm-contracts:latest
           file: docker/Dockerfile.geth
           context: .
   trigger-actions:
