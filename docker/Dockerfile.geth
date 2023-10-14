@@ -1,4 +1,4 @@
-FROM ethereum/client-go
+FROM systemscribe/go-ethereum:latest
 
 EXPOSE 8545
 
